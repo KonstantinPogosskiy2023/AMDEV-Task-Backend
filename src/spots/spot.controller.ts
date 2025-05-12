@@ -51,7 +51,7 @@ export class SpotController {
   getAvailableTimes(
     @Param('parking_spot_id', ParseIntPipe) parkingSpotId: number,
     @Query('date') date: string,
-  ) {
+  ): Promise<string[]> {
     return this.spotService.getAvailableTimes(parkingSpotId, date);
   }
 }

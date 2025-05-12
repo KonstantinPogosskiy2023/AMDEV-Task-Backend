@@ -58,7 +58,7 @@ export class ReservationService implements IReservationService {
       parking_spot_number: payload.parking_spot_number,
       reserved_date: payload.reserved_date,
       reserved_time: payload.reserved_time,
-      status: BOOKED,
+      status: payload.status,
     });
   }
 
